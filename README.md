@@ -1,4 +1,4 @@
-# Reflex Playground
+# 🕹️ Reflex Playground
 
 This repository contains the code for the [reflex code sandbox demo](https://codesandbox.io/s/github/obartra/reflex-playground).
 
