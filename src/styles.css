@@ -1,0 +1,41 @@
+* {
+  font-weight: 100;
+  font-family: Geometria, Arial, Helvetica, sans-serif;
+  background-clip: content-box;
+}
+
+body {
+  margin: 0;
+}
+
+footer,
+header {
+  background-color: black;
+  color: white;
+}
+
+.content {
+  margin-top: 60px;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src: url('https://obartra.github.io/reflex/fonts/Geometria-Light.ttf')
+    format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
