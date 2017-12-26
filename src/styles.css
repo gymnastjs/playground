@@ -14,10 +14,6 @@ header {
   color: white;
 }
 
-.content {
-  margin-top: 60px;
-}
-
 h2,
 p {
   margin: 0;
@@ -33,9 +29,9 @@ h1 {
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('https://obartra.github.io/reflex/fonts/Geometria-Light.ttf')
-    format('truetype');
+  font-family: "Geometria";
+  src: url("https://obartra.github.io/reflex/fonts/Geometria-Light.ttf")
+    format("truetype");
   font-weight: 100;
   font-style: normal;
 }

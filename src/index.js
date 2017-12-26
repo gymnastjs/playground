@@ -1,5 +1,5 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
 import {
   Grid,
   Layout,
@@ -7,23 +7,22 @@ import {
   Col,
   ConfigProvider,
   Dev,
-  asLayout,
-} from 'xn-reflex'
-import './styles.css'
+  asLayout
+} from "xn-reflex";
+import "./styles.css";
 
 const boxStyle = {
-  color: '#1469cc',
-  backgroundColor: '#efefef',
-}
+  color: "#1469cc",
+  backgroundColor: "#efefef"
+};
+const style = {
+  TALL: { ...boxStyle, minHeight: 200 },
+  MEDIUM: { ...boxStyle, minHeight: 150 },
+  SMALL: { ...boxStyle, minHeight: "initial" }
+};
 
-const SIZE = {
-  TALL: { minHeight: 200 },
-  MEDIUM: { minHeight: 150 },
-  SMALL: { minHeight: 'initial' },
-}
-
-const Footer = asLayout('footer')
-const Header = asLayout('header')
+const Footer = asLayout("footer");
+const Header = asLayout("header");
 
 function Page() {
   return (
@@ -37,25 +36,25 @@ function Page() {
             </Col>
           </Root>
         </Header>
-        <Layout height="parent" className="content">
+        <Layout height="parent" marginTop={7.5}>
           <Layout height="auto">
             <Root>
               <Grid align="stretch" marginBottom={0} marginTop="L">
-                <Col size={10} style={{ ...boxStyle, ...SIZE.TALL }} />
-                <Col size={2} style={{ ...boxStyle, ...SIZE.SMALL }} />
+                <Col size={10} style={style.TALL} />
+                <Col size={2} style={style.SMALL} />
 
-                <Col style={{ ...boxStyle, ...SIZE.MEDIUM }} />
+                <Col style={style.MEDIUM} />
 
-                <Col size={6} style={{ ...boxStyle, ...SIZE.MEDIUM }} />
-                <Col size={6} style={{ ...boxStyle, ...SIZE.MEDIUM }} />
+                <Col size={6} style={style.MEDIUM} />
+                <Col size={6} style={style.MEDIUM} />
 
-                <Col size={4} style={{ ...boxStyle, ...SIZE.TALL }} />
-                <Col size={4} style={{ ...boxStyle, ...SIZE.TALL }} />
-                <Col size={4} style={{ ...boxStyle, ...SIZE.TALL }} />
+                <Col size={4} style={style.TALL} />
+                <Col size={4} style={style.TALL} />
+                <Col size={4} style={style.TALL} />
 
-                <Col size={4} style={{ ...boxStyle, ...SIZE.TALL }} />
-                <Col size={4} style={{ ...boxStyle, ...SIZE.TALL }} />
-                <Col size={4} style={{ ...boxStyle, ...SIZE.TALL }} />
+                <Col size={4} style={style.TALL} />
+                <Col size={4} style={style.TALL} />
+                <Col size={4} style={style.TALL} />
               </Grid>
             </Root>
           </Layout>
@@ -69,7 +68,7 @@ function Page() {
         </Layout>
       </Layout>
     </ConfigProvider>
-  )
+  );
 }
 
-ReactDOM.render(<Page />, document.querySelector('#root'))
+ReactDOM.render(<Page />, document.querySelector("#root"));
