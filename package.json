@@ -1,9 +1,10 @@
 {
-  "name": "reflex-playground",
-  "description": "Reflex is a React and flexbox-based layout solution. With Reflex, you can eliminate your layout css or reduce it to just a few lines.",
+  "name": "gymnast-playground",
+  "description":
+    "gymnast is a configurable grid and layout engine for React. With gymnast, you can eliminate your layout css or reduce it to just a few lines.",
   "version": "0.0.12",
   "dependencies": {
-    "xn-reflex": "latest",
+    "gymnast": "latest",
     "react-dom": "latest",
     "react": "latest"
   },
