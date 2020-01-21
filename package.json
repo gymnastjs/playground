@@ -1,12 +1,11 @@
 {
   "name": "gymnast-playground",
-  "description":
-    "gymnast is a configurable grid and layout engine for React. With gymnast, you can eliminate your layout css or reduce it to just a few lines.",
+  "description": "gymnast is a configurable grid and layout engine for React. With gymnast, you can eliminate your layout css or reduce it to just a few lines.",
   "version": "0.0.12",
   "dependencies": {
-    "gymnast": "latest",
-    "react-dom": "latest",
-    "react": "latest"
+    "gymnast": "17.0.0-next.19",
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
   },
   "devDependencies": {
     "react-scripts": "1.0.0"
